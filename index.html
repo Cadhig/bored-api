@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bored API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bored API</h1>
+        <a href="">Repository</a>
+    </header>
+    <div class="selected-choice">
+        <div id="type-choice"></div>
+        <div id="participants-choice"></div>
+        <div id="money-choice"></div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Type</button>
+        <div class="dropdown-content">
+            <button class="selections" onclick="typeChoice(this.value)" value="recreational">Recreational</button>
+            <button class="selections" onclick="typeChoice(this.value)" value="music">Music</button>
+            <button class="selections" onclick="typeChoice(this.value)" value="education">Education</button>
+            <button class="selections" onclick="typeChoice(this.value)" value="relaxation">Relaxation</button>
+            <button class="selections" onclick="typeChoice(this.value)" value="cooking">Cooking</button>
+            <button class="selections" onclick="typeChoice(this.value)" value="social">Social</button>
+            <button class="selections" onclick="typeChoice(this.value)" value="diy">DIY</button>
+            <button class="selections" onclick="typeChoice(this.value)" value="busywork">Busywork</button>
+            <button class="selections" onclick="typeChoice(this.value)" value="charity">Charity</button>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">How many people?</button>
+        <div class="dropdown-content">
+            <button class="selections" onclick="participantsChoice(this.value)" value="1">1</button>
+            <button class="selections" onclick="participantsChoice(this.value)" value="2">2</button>
+            <button class="selections" onclick="participantsChoice(this.value)" value="3">3</button>
+            <button class="selections" onclick="participantsChoice(this.value)" value="10">4+</button>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Willing to spend some money?</button>
+        <div class="dropdown-content">
+            <button class="selections" onclick="moneyChoice(this.value)" value="yes">Yes</button>
+            <button class="selections" onclick="moneyChoice(this.value)" value="no">No</button>
+        </div>
+    </div>
+    <div>
+        <button onclick="response()">Have some fun!</button>
+    </div>
+    <div class="info-box">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
